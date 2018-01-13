@@ -31,7 +31,8 @@ RUN mkdir /claymore \
  && wget ${MINER_URL} \
  && tar -xvf ./*.tar.gz -C /claymore --strip-components 1 \
  && rm */.tar.gz \
- && rm -rf /var/lib/apt/lists/*
+ && rm -rf /var/lib/apt/lists/* \
+ && chmod +x /claymore/ethdcrminer64
 
 EXPOSE 3333/tcp
 
