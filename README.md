@@ -11,7 +11,7 @@ Requires a working installation of Docker CE or EE and Nvidia-Docker2.
 
 ## Installation
 
-docker build -t cultclassik/claymore-eth:amd .
+docker build -t cultclassik/claymore-eth:amd ./build
 
 ## Usage
 
