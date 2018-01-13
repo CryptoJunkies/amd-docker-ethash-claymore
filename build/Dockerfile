@@ -20,7 +20,9 @@ ENV GPU_MAX_ALLOC_PERCENT 100
 ENV GPU_SINGLE_ALLOC_PERCENT 100
 
 RUN apt-get update && apt-get install -y \
- && libcurl3 wget xz-utils \
+    libcurl3 \
+    wget \
+    xz-utils \
  && wget ${AMD_DRIVER} \
  && unxz amdgpu-pro-17.50-511655.tar.xz \
  && tar -xvf *.tar \
