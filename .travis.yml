@@ -9,7 +9,7 @@ services:
 
 script:
   - TAG="eth-amd-10.3"
-  - TAGL=eth-amd-latest"
+  - TAGL="eth-amd-latest"
   - CONT_NAME="claymore"
   - REPO="cryptojunkies"
   - docker login -u="$DOCKER_USER" -p="$DOCKER_PASS"

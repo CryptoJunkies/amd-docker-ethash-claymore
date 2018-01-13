@@ -34,6 +34,8 @@ RUN mkdir /claymore \
  && rm -rf /var/lib/apt/lists/* \
  && chmod +x /claymore/ethdcrminer64
 
+WORKDIR /claymore
+
 EXPOSE 3333/tcp
 
 ENTRYPOINT [ "/bin/bash", "/claymore/ethdcrminer64" ]
