@@ -11,11 +11,11 @@ Requires a working installation of Docker CE or EE and Nvidia-Docker2.
 
 ## Installation
 
-docker build -t cultclassik/claymore-eth:amd ./build
+docker build -t cultclassik/claymore-eth:eth-amd-latest ./build
 
 ## Usage
 
-docker run --device=/dev/dri cryptojunkies/claymore "-epool mypool.org -ewall myethaccount etc"
+docker run --device=/dev/dri cryptojunkies/claymore:eth-amd-latest "-epool mypool.org -ewall myethaccount etc"
 
 ## Contributing
 
