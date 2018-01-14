@@ -13,12 +13,6 @@ ENV DPOOL="stratum+tcp://lbry.suprnova.cc:6256"
 ENV DWALL="lbc_acct.lbc_worker"
 ENV DCRI=8
 
-ENV GPU_FORCE_64BIT_PTR 0
-ENV GPU_MAX_HEAP_SIZE 100
-ENV GPU_USE_SYNC_OBJECTS 1
-ENV GPU_MAX_ALLOC_PERCENT 100
-ENV GPU_SINGLE_ALLOC_PERCENT 100
-
 RUN apt-get update && apt-get install -y \
     libcurl3 \
     wget \
