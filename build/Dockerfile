@@ -40,5 +40,5 @@ WORKDIR /claymore
 
 EXPOSE 3333/tcp
 
-ENTRYPOINT [ "/bin/bash", "/claymore/ethdcrminer64" ]
+ENTRYPOINT [ "/claymore/ethdcrminer64" ]
 CMD [ "-epool", "mypool.org", "-ewal", "0xfdf87w987fw98" ]
