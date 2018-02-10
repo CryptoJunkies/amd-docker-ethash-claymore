@@ -3,7 +3,7 @@ FROM library/ubuntu:xenial
 LABEL maintainer="Chris Diehl <cultclassik@gmail.com>"
 
 ENV AMD_DRIVER="https://s3-us-west-1.amazonaws.com/mastermine/minebox/amdgpu-pro-17.50-511655.tar.xz"
-ENV MINER_URL="https://s3-us-west-1.amazonaws.com/mastermine/minebox/claymore_Ethereum%2BDecred_Siacoin_Lbry_Pascal_gpu_v10.3_+LINUX.tar.gz"
+ENV MINER_URL="https://s3-us-west-1.amazonaws.com/mastermine/minebox/Claymore_Dual_Ethereum%2BDecred_Siacoin_Lbry_Pascal_Blake2s_Keccak_gpu_v11.0_LINUX.tar.gz"
 
 WORKDIR /tmp
 
