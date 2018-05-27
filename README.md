@@ -27,6 +27,10 @@ docker run --device=/dev/dri cryptojunkies/claymore:eth-amd-latest "-epool mypoo
 
 ## History
 
+2018-27-05
+Updated AMD drivers from 17.50 to 18.10
+Updated Claymore from 11.0 to 11.7
+
 2018-13-01
 Initial creation and build by CultClassik
 
