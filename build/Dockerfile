@@ -12,8 +12,8 @@ RUN apt-get update && apt-get install -y \
     libcurl3 \
     wget \
     xz-utils \
- && wget ${AMD_DRIVER} -O ./${DRIVER_FILE}.tar.xz\
- && unxz  \
+ && wget ${AMD_DRIVER} -O ./${DRIVER_FILE}.tar.xz \
+ && unxz ./${DRIVER_FILE}.tar.xz \
  && tar -xvf *.tar \
  && rm *.tar \
  && ./${DRIVER_FILE}/amdgpu-pro-install --opencl=legacy,rocm --headless -y \
