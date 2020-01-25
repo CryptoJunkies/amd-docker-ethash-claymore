@@ -1,0 +1,21 @@
+trigger:
+  branches:
+    include:
+    - master
+  paths:
+    exclude:
+    - README.md
+
+pool:
+  vmImage: 'Ubuntu-18.04'
+
+steps:
+- task: Docker@2
+  inputs:
+    containerRegistry: 'Docker Hub CultClassik'
+    repository: 'cryptojunkies/claymore'
+    command: 'buildAndPush'
+    Dockerfile: '**/Dockerfile'
+    tags: |
+      eth-amd-15.0
+      eth-amd-latest
